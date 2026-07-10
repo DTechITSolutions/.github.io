@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DTech IT Solutions — Managed IT, Cloud & Infrastructure in Ethiopia</title>
+  <meta name="description" content="DTech IT Solutions is an Addis Ababa IT firm delivering integrated managed IT, cloud & Azure, networking, telephony, security and data services to organizations across Ethiopia." />
+  <meta name="theme-color" content="#0C1F30" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <!-- ===== MOBILE TOP BAR ===== -->
+  <div class="topbar">
+    <a class="brand brand--sm" href="#overview" data-view="overview" aria-label="DTech IT Solutions home">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="26" height="26" fill="none"><rect x="1.5" y="1.5" width="29" height="29" rx="7" stroke="currentColor" stroke-width="1.5"/><path d="M9 10h6.2c4 0 6.8 2.4 6.8 6s-2.8 6-6.8 6H9V10Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="23.5" cy="9" r="2.4" fill="#23C4B6"/></svg>
+      </span>
+      <span class="brand__text">DTech<span class="brand__text--accent"> IT</span></span>
+    </a>
+    <button class="topbar__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="scrim" id="scrim" hidden></div>
+
+  <div class="app">
+    <!-- ===================== SIDEBAR ===================== -->
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+      <a class="brand sidebar__brand" href="#overview" data-view="overview" aria-label="DTech IT Solutions home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="30" height="30" fill="none"><rect x="1.5" y="1.5" width="29" height="29" rx="7" stroke="currentColor" stroke-width="1.5"/><path d="M9 10h6.2c4 0 6.8 2.4 6.8 6s-2.8 6-6.8 6H9V10Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="23.5" cy="9" r="2.4" fill="#23C4B6"/></svg>
+        </span>
+        <span class="brand__text">DTech<span class="brand__text--accent"> IT Solutions</span></span>
+      </a>
+
+      <nav class="side-nav" aria-label="Sections">
+        <a class="side-nav__link" href="#overview" data-view="overview">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 13h6V4H4v9Zm10 7h6v-9h-6v9ZM4 20h6v-4H4v4ZM14 9h6V4h-6v5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          <span>Overview</span>
+        </a>
+        <a class="side-nav__link" href="#services" data-view="services">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 5 6v5c0 4.4 3 8.4 7 9.5 4-1.1 7-5.1 7-9.5V6l-7-3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          <span>Services</span>
+        </a>
+        <a class="side-nav__link" href="#packages" data-view="packages">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 3 7.5 12 12l9-4.5L12 3ZM3 7.5v9L12 21m9-13.5v9L12 21" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          <span>Packages</span>
+        </a>
+        <a class="side-nav__link" href="#why" data-view="why">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m12 3 2.5 5.2 5.7.8-4.1 4 1 5.6L12 21l-5.1 2.6 1-5.6-4.1-4 5.7-.8L12 3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          <span>Why DTech</span>
+        </a>
+        <a class="side-nav__link" href="#clients" data-view="clients">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0M16 5.2a3 3 0 0 1 0 5.6M17.5 20a5.5 5.5 0 0 0-3-4.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <span>Who we serve</span>
+        </a>
+        <a class="side-nav__link" href="#about" data-view="about">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 11v5M12 8h.01" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+          <span>About &amp; FAQ</span>
+        </a>
+        <a class="side-nav__link" href="#contact" data-view="contact">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Contact</span>
+        </a>
+      </nav>
+
+      <div class="sidebar__foot">
+        <div class="sys-chip">
+          <span class="sys-chip__dot"></span>
+          <span class="sys-chip__text">All systems operational</span>
+          <span class="sys-chip__val">99.9%</span>
+        </div>
+        <a class="btn btn--amber btn--full" href="#contact" data-view="contact">Free IT assessment</a>
+        <a class="sidebar__mail" href="mailto:info@dtechitsolutions.com">info@dtechitsolutions.com</a>
+      </div>
+    </aside>
+
+    <!-- ===================== CONTENT ===================== -->
+    <main class="content" id="content">
+      <!-- ---------- OVERVIEW ---------- -->
+      <section class="view" id="view-overview" data-view="overview">
+        <div class="view__inner">
+          <div class="hero">
+            <div class="hero__copy">
+              <p class="eyebrow"><span class="eyebrow__dot"></span>Addis Ababa &middot; Managed IT &amp; Cloud</p>
+              <h1 class="hero__title">The IT partner that keeps your organization online.</h1>
+              <p class="hero__lede">One team for your whole technology stack — managed support, cloud and Azure,
+                networking, telephony, security and field data. Built for organizations that can't afford downtime.</p>
+              <div class="hero__actions">
+                <a class="btn btn--amber btn--lg" href="#contact" data-view="contact">Request a free assessment</a>
+                <a class="btn btn--outline btn--lg" href="#services" data-view="services">Explore services
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <aside class="ops" aria-label="Illustrative service status panel">
+              <div class="ops__head"><span class="ops__title">SERVICE&nbsp;STATUS</span><span class="ops__live"><span class="ops__pulse"></span>live</span></div>
+              <ul class="ops__list">
+                <li class="ops__row" data-status="sync"><span class="ops__code">SVC-01</span><span class="ops__name">Managed IT</span><span class="ops__meta">syncing</span><span class="ops__dot"></span></li>
+                <li class="ops__row" data-status="sync"><span class="ops__code">CLD-02</span><span class="ops__name">Cloud &amp; Azure</span><span class="ops__meta">syncing</span><span class="ops__dot"></span></li>
+                <li class="ops__row" data-status="sync"><span class="ops__code">NET-03</span><span class="ops__name">Network &amp; Wi-Fi</span><span class="ops__meta">syncing</span><span class="ops__dot"></span></li>
+                <li class="ops__row" data-status="sync"><span class="ops__code">SEC-04</span><span class="ops__name">CCTV &amp; Access</span><span class="ops__meta">syncing</span><span class="ops__dot"></span></li>
+
+<li class="ops__row" data-status="sync"><span class="ops__code">MAN-05</span><span class="ops__name">Office machine &amp; Maintenace</span><span class="ops__meta">syncing</span><span class="ops__dot"></span></li>
+
+              </ul>
+              <div class="ops__foot"><span class="ops__uptime">Uptime this quarter</span><span class="ops__num">99.9%</span></div>
+            </aside>
+          </div>
+
+          <div class="stats-row">
+            <div class="stat"><span class="stat__n" data-count="18" data-suffix="+">0</span><span class="stat__l">years combined experience</span></div>
+            <div class="stat"><span class="stat__n" data-count="14">0</span><span class="stat__l">service lines, one contract</span></div>
+            <div class="stat"><span class="stat__n" data-count="4">0</span><span class="stat__l">client sectors served</span></div>
+            <div class="stat"><span class="stat__n" data-count="99" data-suffix="%">0</span><span class="stat__l">focus on staying up</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- SERVICES ---------- -->
+      <section class="view" id="view-services" data-view="services">
+        <div class="view__inner">
+          <header class="head"><p class="eyebrow eyebrow--dark">What we do</p><h2 class="title">Your whole IT stack, from one accountable team.</h2><p class="sub">Cloud, connectivity, security and data under one contract — so you manage fewer vendors and get one number to call.</p></header>
+          <div class="svc-grid">
+            <article class="svc-card"><span class="svc-card__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 18a4 4 0 0 1 0-8 5 5 0 0 1 9.6-1.3A3.5 3.5 0 0 1 18 18H7Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span><h3>Managed IT &amp; Cloud</h3><ul><li>Help desk &amp; endpoint management</li><li>SLA-based on-site &amp; remote support</li><li>Microsoft 365 &amp; Azure administration</li><li>Migration, architecture &amp; cost tuning</li></ul></article>
+            <article class="svc-card"><span class="svc-card__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="6" cy="6" r="2.2" stroke="currentColor" stroke-width="1.7"/><circle cx="18" cy="6" r="2.2" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="18" r="2.2" stroke="currentColor" stroke-width="1.7"/><path d="M7.6 7.6 11 15m6-7.4L13 15M8 6h8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><h3>Networking &amp; Telephony</h3><ul><li>LAN/WAN design &amp; structured cabling</li><li>Wi-Fi rollout (Cisco Meraki &amp; more)</li><li>PBX, VoIP &amp; SIP trunk configuration</li><li>Toll-free hotline &amp; contact centre</li></ul></article>
+            <article class="svc-card"><span class="svc-card__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 5 6v5c0 4.4 3 8.4 7 9.5 4-1.1 7-5.1 7-9.5V6l-7-3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Security &amp; Access</h3><ul><li>Cybersecurity awareness &amp; MFA</li><li>CCTV design, supply &amp; installation</li><li>Smart-door &amp; access control</li><li>Biometric / RFID attendance</li></ul></article>
+            <article class="svc-card"><span class="svc-card__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s6-5.3 6-10a6 6 0 1 0-12 0c0 4.7 6 10 6 10Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.2" stroke="currentColor" stroke-width="1.7"/></svg></span><h3>Data &amp; GIS</h3><ul><li>Mobile data collection (Kobo / ODK)</li><li>Survey design &amp; enumerator training</li><li>Cleaning, analysis &amp; dashboards</li><li>GIS mapping &amp; GPS field surveys</li></ul></article>
+            <article class="svc-card"><span class="svc-card__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M9 4V3h6v1M8.5 10l1.5 1.5L13 8.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Advisory &amp; Procurement</h3><ul><li>Vendor evaluation &amp; selection</li><li>Hardware / software purchasing</li><li>Cost-benefit analysis for IT spend</li><li>Hotline migration consulting</li></ul></article>
+            <article class="svc-card"><span class="svc-card__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4 3 8l9 4 9-4-9-4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M7 10v4.5c0 1.4 2.2 2.5 5 2.5s5-1.1 5-2.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Training &amp; Maintenance</h3><ul><li>MS Office &amp; M365 productivity</li><li>Cybersecurity awareness workshops</li><li>Preventive hardware &amp; printer care</li><li>Repair, upgrade &amp; warranty</li></ul></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- PACKAGES ---------- -->
+      <section class="view" id="view-packages" data-view="packages">
+        <div class="view__inner">
+          <header class="head"><p class="eyebrow eyebrow--dark">Support packages</p><h2 class="title">Pick the level of cover that fits.</h2><p class="sub">Tiered managed-support plans that grow with you, scoped to your size and budget during the free assessment.</p></header>
+          <div class="pkg-grid">
+            <article class="pkg"><h3 class="pkg__name">Basic</h3><p class="pkg__for">Small teams getting organized</p><p class="pkg__price">Tailored quote</p><ul class="pkg__list"><li>Remote help desk</li><li>Email &amp; Microsoft 365 support</li><li>Monthly system check-up</li><li>Hardware &amp; vendor guidance</li></ul><a class="btn btn--outline btn--full" href="#contact" data-view="contact">Get a quote</a></article>
+            <article class="pkg pkg--featured"><span class="pkg__flag">Most popular</span><h3 class="pkg__name">Standard</h3><p class="pkg__for">Growing organizations</p><p class="pkg__price">Tailored quote</p><ul class="pkg__list"><li>Everything in Basic</li><li>On-site &amp; remote support</li><li>Defined SLA response times</li><li>Patch, updates &amp; monthly report</li></ul><a class="btn btn--amber btn--full" href="#contact" data-view="contact">Get a quote</a></article>
+            <article class="pkg"><h3 class="pkg__name">Premium</h3><p class="pkg__for">Multi-office &amp; critical operations</p><p class="pkg__price">Tailored quote</p><ul class="pkg__list"><li>Everything in Standard</li><li>Priority SLA &amp; dedicated contact</li><li>Cloud / Azure management</li><li>Security monitoring &amp; reviews</li></ul><a class="btn btn--outline btn--full" href="#contact" data-view="contact">Get a quote</a></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- WHY ---------- -->
+      <section class="view" id="view-why" data-view="why">
+        <div class="view__inner">
+          <header class="head"><p class="eyebrow eyebrow--dark">Why DTech</p><h2 class="title">Built on real multi-office operations, not a sales deck.</h2></header>
+          <div class="why-grid">
+            <div class="why-item"><span class="why-item__k">Full-stack depth</span><p>Proven across networks, M365/Azure, PBX telephony, ITSM and cybersecurity — not a single niche.</p></div>
+            <div class="why-item"><span class="why-item__k">Multi-office reality</span><p>Hands-on managing IT and vendors across dispersed field offices and multiple countries.</p></div>
+            <div class="why-item"><span class="why-item__k">Integrated, not piecemeal</span><p>Cloud migration paired with ongoing managed support, so solutions stay maintained.</p></div>
+            <div class="why-item"><span class="why-item__k">IT + field data</span><p>A rare local blend of digital infrastructure and GIS/data capability for donor-funded work.</p></div>
+            <div class="why-item"><span class="why-item__k">Digital + physical</span><p>Network, cloud and cybersecurity delivered alongside CCTV, smart doors and attendance.</p></div>
+            <div class="why-item"><span class="why-item__k">Hotline migration</span><p>Direct experience moving on-premises toll-free lines to Azure, SIP and telecom coordination.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- CLIENTS ---------- -->
+      <section class="view" id="view-clients" data-view="clients">
+        <div class="view__inner">
+          <header class="head"><p class="eyebrow eyebrow--dark">Who we serve</p><h2 class="title">Different organizations, one dependable partner.</h2></header>
+          <div class="client-grid">
+            <article class="client-card"><h3>NGOs &amp; international agencies</h3><p class="client-card__need">Network setup, M365/Azure, telephony, field-office support, survey &amp; GIS data, hotline systems.</p><p class="client-card__opp">Familiar with donor compliance, multi-office coordination and remote field operations.</p></article>
+            <article class="client-card"><h3>SMEs &amp; local businesses</h3><p class="client-card__need">Everyday IT support, cabling &amp; Wi-Fi, hardware, cloud email, CCTV, printer maintenance.</p><p class="client-card__opp">Low-cost recurring support that removes the guesswork from running your systems.</p></article>
+            <article class="client-card"><h3>Government &amp; institutions</h3><p class="client-card__need">Procurement advisory, networking, GIS &amp; survey support, security cameras, attendance, training.</p><p class="client-card__opp">A partner who understands longer procurement cycles and large, stable engagements.</p></article>
+            <article class="client-card"><h3>Corporates &amp; private companies</h3><p class="client-card__need">Managed IT, cybersecurity, cloud migration, time-and-attendance, staff IT training.</p><p class="client-card__opp">High-reliability managed services with clear response times and accountability.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- ABOUT & FAQ ---------- -->
+      <section class="view" id="view-about" data-view="about">
+        <div class="view__inner">
+          <header class="head"><p class="eyebrow eyebrow--dark">About</p><h2 class="title">Founded by an IT coordinator who has run the systems you rely on.</h2></header>
+          <div class="about">
+            <div class="about__copy">
+              <p>DTech IT Solutions is led by Desalegn — over 14 years inside a large international humanitarian
+                organization plus 4 years teaching ICT, a combined 18-plus years across Microsoft 365, Azure,
+                enterprise networking, PBX telephony, ITSM and multi-country vendor coordination.</p>
+              <p>That background shapes how we work: practical solutions tuned to Ethiopian realities, delivered with
+                the discipline of a team that has managed real infrastructure across many offices.</p>
+              <blockquote class="about__mission">Dependable, professional and cost-effective IT — covering both infrastructure and support — tailored to the Ethiopian market.</blockquote>
+            </div>
+            <div class="about__card">
+              <p class="about__card-k">At a glance</p>
+              <ul class="about__facts">
+                <li><span>Based in</span><strong>Addis Ababa</strong></li>
+                <li><span>Languages</span><strong>Amharic &amp; English</strong></li>
+                <li><span>Coverage</span><strong>Nationwide &amp; field</strong></li>
+                <li><span>Focus</span><strong>Managed IT &amp; cloud</strong></li>
+              </ul>
+              <a class="btn btn--amber btn--full" href="#contact" data-view="contact">Talk to us</a>
+            </div>
+          </div>
+
+          <h3 class="faq-title">Frequently asked</h3>
+          <div class="faq">
+            <div class="faq__item"><button class="faq__q" aria-expanded="false"><span>Do you support organizations outside Addis Ababa?</span><span class="faq__ic" aria-hidden="true"></span></button><div class="faq__a"><p>Yes. Our background is multi-office and field operations, so we support remote sites and organizations working across regions.</p></div></div>
+            <div class="faq__item"><button class="faq__q" aria-expanded="false"><span>Can you take over an existing IT setup?</span><span class="faq__ic" aria-hidden="true"></span></button><div class="faq__a"><p>Absolutely. The free assessment documents what you already have, then we build a plan to stabilize and improve it — no need to start over.</p></div></div>
+            <div class="faq__item"><button class="faq__q" aria-expanded="false"><span>Do you handle both hardware and cloud?</span><span class="faq__ic" aria-hidden="true"></span></button><div class="faq__a"><p>Yes — that's the point of DTech. From cabling, CCTV and printers to Microsoft 365 and Azure, it's all under one contract with one team accountable.</p></div></div>
+            <div class="faq__item"><button class="faq__q" aria-expanded="false"><span>Do you offer support in Amharic?</span><span class="faq__ic" aria-hidden="true"></span></button><div class="faq__a"><p>Yes. We work fluently in both Amharic and English, including staff training and documentation.</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- CONTACT ---------- -->
+      <section class="view" id="view-contact" data-view="contact">
+        <div class="view__inner">
+          <header class="head"><p class="eyebrow eyebrow--dark">Get started</p><h2 class="title">Book a free IT assessment.</h2><p class="sub">Tell us about your organization and what's slowing you down. We'll reply with next steps and a no-obligation walk-through.</p></header>
+          <div class="contact">
+            <ul class="contact__details">
+              <li><span class="contact__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="contact__k">Email</span><a href="mailto:info@dtechitsolutions.com">info@dtechitsolutions.com</a></li>
+              <li><span class="contact__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 4h3l2 5-2 1.5a12 12 0 0 0 5.5 5.5L17 18l5 2v3a2 2 0 0 1-2 2C10 24 2 16 2 5a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span><span class="contact__k">Phone</span><a href="tel:+251910477963">+251 91 047 7963</a></li>
+              <li><span class="contact__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s6-5.3 6-10a6 6 0 1 0-12 0c0 4.7 6 10 6 10Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.2" stroke="currentColor" stroke-width="1.7"/></svg></span><span class="contact__k">Location</span><span class="contact__v">Addis Ababa, Ethiopia</span></li>
+            </ul>
+
+            <form class="contact__form" id="contactForm" novalidate>
+              <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required /><span class="field__err" data-for="name"></span></div>
+              <div class="field"><label for="org">Organization</label><input id="org" name="org" type="text" autocomplete="organization" /></div>
+              <div class="field--split">
+                <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required /><span class="field__err" data-for="email"></span></div>
+                <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" /></div>
+              </div>
+              <div class="field"><label for="type">What do you need?</label>
+                <select id="type" name="type"><option>Managed IT &amp; support</option><option>Cloud &amp; Microsoft Azure</option><option>Networking &amp; Wi-Fi</option><option>Telephony &amp; hotline</option><option>CCTV / access / attendance</option><option>Data &amp; GIS</option><option>Training</option><option>Not sure yet</option></select>
+              </div>
+              <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="4" required></textarea><span class="field__err" data-for="message"></span></div>
+              <button class="btn btn--amber btn--full btn--lg" type="submit">Send request</button>
+              <p class="contact__hint" id="formHint" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <span>&copy; <span id="year"></span> DTech IT Solutions · Addis Ababa, Ethiopia</span>
+        <span class="foot__note">Private limited company (in formation)</span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
